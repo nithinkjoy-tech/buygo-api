@@ -13,5 +13,5 @@ app.use("/mobiles",mobiles)
 app.use("/users",users)
 app.use("/",mobiles)
 
-const port = process.env.port || 3500;
+const port = process.env.PORT || 3500;
 app.listen(port, () => console.log(`Listening to port ${port}`))
