@@ -1,10 +1,10 @@
 const mongoose = require("mongoose");
-
+require("dotenv").config();
 
 // "mongodb://localhost/buygo"
 
 module.exports = function (req,res,next) {
-  const db = "mongodb+srv://nithinkjoy:mss32.dll@nkj1-sxbxp.mongodb.net/buygo?retryWrites=true&w=majority";
+  const db = process.env.MONGO_URI;
   mongoose
     .connect(db)
     .then(() => console.log("connected to database"))
