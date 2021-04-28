@@ -20,7 +20,7 @@ router.post("/", async (req, res) => {
   await mobiles.save();
   res.send(mobiles);
 });
-
+ 
 
 router.put("/:id", async (req, res) => {
   let data = req.body;

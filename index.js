@@ -6,7 +6,7 @@ const users=require("./routes/users")
 const cors = require('cors')
  
 app.use(cors()) 
-app.use(db);
+app.use(db); 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use("/mobiles",mobiles)

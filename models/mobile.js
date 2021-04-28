@@ -10,7 +10,7 @@ let schema = Joi.object({
     feature4: Joi.string().required().min(3),
     price: Joi.number().required().min(0),
     description: Joi.string().required().min(5).max(3000),
-    numberInStock: Joi.number().required(),
+    numberInStock: Joi.number().required(),  
     imageUrl: Joi.string().required(),
   })
 

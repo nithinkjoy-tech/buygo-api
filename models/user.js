@@ -10,7 +10,7 @@ schema = Joi.object({
 });
 
 let mongooseSchema=joigoose.convert(schema)
-mongooseSchema.addedToCart={type:Array,default:[]}
+mongooseSchema.addedToCart={type:Array,default:[]}  
 mongooseSchema.isAdmin={type:Boolean,default:false}
 const user = new mongoose.Schema(mongooseSchema);
 
