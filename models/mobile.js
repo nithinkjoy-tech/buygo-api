@@ -14,6 +14,7 @@ let schema = Joi.object({
     imageUrl: Joi.string().required(),
   })
 
+  
 //? joigoose is used to use joi validation for mongoose. 
 let mongooseSchema=joigoose.convert(schema)
 mongooseSchema.quantity={type:Number,default:0}

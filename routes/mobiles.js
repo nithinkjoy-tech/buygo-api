@@ -21,6 +21,7 @@ router.post("/", async (req, res) => {
   res.send(mobiles);
 });
 
+
 router.put("/:id", async (req, res) => {
   let data = req.body;
   let { error } = validate(data);
