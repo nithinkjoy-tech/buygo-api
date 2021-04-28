@@ -15,7 +15,7 @@ router.get("/:id", async (req, res) => {
 router.post("/", async (req, res) => {
   let data = req.body
   let { error } = validate(data);
-  if (error) return console.log("error", error);
+  if (error) return res.status(400).send(error);
   let mobiles = new Mobile(data);
   await mobiles.save();
   res.send(mobiles);
